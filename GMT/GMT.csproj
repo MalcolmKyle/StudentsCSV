@@ -208,6 +208,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Pictures\FinalSort.PNG" />
+    <Content Include="Pictures\pagingStudents.PNG" />
+    <Content Include="Pictures\seed.PNG" />
+    <Content Include="Pictures\seed2.PNG" />
+    <Content Include="Pictures\studentIndex.PNG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EmbeddedResource Include="Domain\student-mat.csv" />
