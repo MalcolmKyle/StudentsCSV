@@ -1,7 +1,7 @@
 # StudentsCSV
 
 This project was another C# MVC application that shows the details of a student database.
-![Alt text](StudentsCSV/GMT/Pictures/studentIndex.PNG?raw=ture "Student Page")
+![Alt text](/GMT/Pictures/studentIndex.PNG?raw=ture "Student Page")
 
 
 The information pertaining to the students came from a CSV file.
