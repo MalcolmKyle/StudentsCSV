@@ -1,0 +1,125 @@
+﻿@model PagedList.IPagedList<GMT.Models.Student>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Student Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Id", "Index", new { sortOrder = ViewBag.IdSortParam})
+        </th>
+        <th>
+            @Html.ActionLink("School","Index", new { sortOrder = ViewBag.SchoolSortParam } )
+        </th>
+        <th>
+            Sex
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+           Family Size
+        </th>
+        <th>
+            Travel Time
+        </th>
+        <th>
+            Study Time
+        </th>
+        <th>
+            Failures
+        </th>
+        <th>
+            Higher
+        </th>
+        <th>
+            Internet
+        </th>
+        <th>
+            FreeTime
+        </th>
+        <th>
+            Absences
+        </th>
+        <th>
+            First Period Grade
+        </th>
+        <th>
+            Second Period Grade
+        </th>
+        <th>
+            @Html.ActionLink("Final Grade", "Index", new { sortOrder = ViewBag.FinalGradeSortParam })
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.School)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sex)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FamSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TravelTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudyTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Failures)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem=>item.Higher)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Internet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FreeTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Absences)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.G1)
+        </td>
+        <th>
+            @Html.DisplayFor(modelItem => item.G2)
+        </th>
+        <td>
+            @Html.DisplayFor(modelItem => item.G3)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort}))

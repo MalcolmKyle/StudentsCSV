@@ -1,0 +1,258 @@
+﻿@model GMT.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Sex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FamSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FamSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pstatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pstatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MEdu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MEdu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FEdu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FEdu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guardian)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guardian)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TravelTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TravelTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudyTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudyTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Failures)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Failures)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolSupport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolSupport)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FamSupport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FamSupport)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Activities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Activities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nursery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nursery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Higher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Higher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Internet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Internet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Romantic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Romantic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyRel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FamilyRel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FreeTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FreeTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GoOut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GoOut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DailyAlc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DailyAlc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WeekAlc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WeekAlc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Health)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Health)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Absences)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Absences)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.G1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.G1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.G2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.G2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.G3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.G3)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
